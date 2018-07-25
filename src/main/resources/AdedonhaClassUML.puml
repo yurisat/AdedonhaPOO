@@ -1,0 +1,35 @@
+@startuml
+
+
+class Palavra{
+    String palavra;
+
+    String getPalavra();
+    String setPalavra();
+}
+
+class Jogador{
+    String apelido;
+
+    String getApelido();
+    String setApelido();
+}
+
+class Tema{
+    String nomeTema;
+
+    String getNomeTema();
+    String setNomeTema();
+}
+
+class Pontuacao{
+    Integer pontos;
+
+    Integer getPontos();
+    Integer setPontos();
+}
+
+
+
+
+@enduml
