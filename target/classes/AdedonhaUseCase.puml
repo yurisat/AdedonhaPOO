@@ -1,0 +1,33 @@
+@startuml
+:Gerenciador do jogo: as Admin
+:Jogador: as jg
+
+
+Admin --> (Definir jogadores)
+Admin --> (Definir tipos)
+Admin -> (Definir tempo de resposta)
+(Escolher Nº de jogadores) <-- Admin
+(Iniciar jogo) <-- Admin
+(Escolher Nº de rodadas) <-- Admin
+(Sortear letra)<- Admin
+jg -> (Jogar)
+(Criar nova partida) <- Admin
+
+
+
+note left of (Definir jogadores)
+Nome dos jogadores, quantidade
+end note
+
+note bottom of jg
+Possui um apelido de identidade
+end note
+note right of (Jogar)
+Escolher valores dos tipos (Filmes, Frutas, etc.)
+end note
+
+note bottom of (Definir tipos)
+Quantidade de tipos, nomes dos tipos
+end note
+
+@enduml

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import br.com.poo.adedonha.domain.Jogador;
+import br.com.poo.adedonha.domain.Palavra;
 import br.com.poo.adedonha.domain.Rodadas;
 import br.com.poo.adedonha.domain.Tema;
 
@@ -12,16 +13,18 @@ public class Partida {
 	private List<Jogador> jogadores;
 	private List<Tema> temas;
 	private List<String> palavras;
+	
+	private List<Palavra> listaPalavrasJogadores;
 	private Integer rodadas;
 	private Integer totalParticipantes;
 	
 	Random random = new Random();
-	// Pontuacao pontos = new Pontuacao();
 
 	public Partida() {
 		this.jogadores = new ArrayList<>();
 		this.temas = new ArrayList<>();
 		this.palavras = new ArrayList<>();
+		this.listaPalavrasJogadores = new ArrayList<>();
 	}
 
 	public List<Jogador> getJogadores() {
@@ -146,5 +149,10 @@ public class Partida {
 	public void setTotalParticipantes(Integer totalParticipantes) {
 		this.totalParticipantes = totalParticipantes;
 	}
+
+	public List<Palavra> getListaPalavrasJogadores() {
+		return listaPalavrasJogadores;
+	}
+
 
 }

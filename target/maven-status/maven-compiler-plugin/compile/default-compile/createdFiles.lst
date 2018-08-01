@@ -1,0 +1,16 @@
+br\com\poo\adedonha\exception\ConfiguraException.class
+br\com\poo\adedonha\main\AppAdedonha.class
+br\com\poo\adedonha\network\server\TrataCliente.class
+br\com\poo\adedonha\network\client\Cliente.class
+br\com\poo\adedonha\network\ITrataDados.class
+br\com\poo\adedonha\controller\Partida.class
+br\com\poo\adedonha\domain\Jogador.class
+br\com\poo\adedonha\util\FileUtils.class
+br\com\poo\adedonha\domain\Tema.class
+br\com\poo\adedonha\util\Utils.class
+br\com\poo\adedonha\network\server\Servidor.class
+br\com\poo\adedonha\network\server\ClienteServidor.class
+br\com\poo\adedonha\util\Constants.class
+br\com\poo\adedonha\domain\Palavra.class
+br\com\poo\adedonha\domain\Rodadas.class
+br\com\poo\adedonha\network\client\Recebedor.class

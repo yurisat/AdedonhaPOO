@@ -1,18 +1,12 @@
 package br.com.poo.adedonha.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Jogador {
 	private int id;
 	private String apelido;
 	private int pontuacao;
 	
-	private List<Palavra> listaPalavras;
-	
 	public Jogador(String apelido) {
 		this.apelido = apelido;
-		this.listaPalavras = new ArrayList<Palavra>();
 	}
 	
 	public int getId() {
@@ -37,14 +31,6 @@ public class Jogador {
 
 	public void setPontuacao(int pontuacao) {
 		this.pontuacao = pontuacao;
-	}
-
-	public List<Palavra> getListaPalavras() {
-		return listaPalavras;
-	}
-	
-	public void addPalavra(Palavra palavra) {
-		this.listaPalavras.add(palavra);
 	}
 
 	@Override

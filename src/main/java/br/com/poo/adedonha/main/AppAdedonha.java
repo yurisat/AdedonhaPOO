@@ -13,8 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import br.com.poo.adedonha.domain.Jogador;
-import br.com.poo.adedonha.server.Cliente;
-import br.com.poo.adedonha.server.Servidor;
+import br.com.poo.adedonha.network.client.Cliente;
+import br.com.poo.adedonha.network.server.Servidor;
 import br.com.poo.adedonha.util.Constants;
 
 

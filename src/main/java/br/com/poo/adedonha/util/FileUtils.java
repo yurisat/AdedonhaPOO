@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.poo.adedonha.domain.Jogador;
 import br.com.poo.adedonha.domain.Palavra;
 
 public class FileUtils {
@@ -36,7 +37,7 @@ public class FileUtils {
 				
 				for (int pos = 0; pos < palavras.length; pos++) {
 					
-					Palavra palavra = new Palavra(Integer.valueOf(registro[0]), registro[1], palavras[pos], false);
+					Palavra palavra = new Palavra(Integer.valueOf(registro[0]), registro[1], palavras[pos], false, new Jogador("Empty"), 0);
 					listaPalavras.add(palavra);
 					
 				}

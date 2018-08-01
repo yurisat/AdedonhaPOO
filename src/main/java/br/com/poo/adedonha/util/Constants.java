@@ -13,6 +13,7 @@ public class Constants {
 	public static final String CMD_ESPERANDOPLAYERS = "esperandoPlayers";
 	public static final String CMD_LOGAR = "logar";
 	public static final String CMD_JOGAR = "jogar";
+	public static final String CMD_RESULTADO = "resultado";
 	
 	public static final String SEPARATOR = ";";
 	public static final int SLEEP_SECONDS = 10;

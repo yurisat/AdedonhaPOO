@@ -2,16 +2,20 @@ package br.com.poo.adedonha.domain;
 
 public class Palavra {
 	
+	private Jogador jogador;
 	private String palavra;
 	private int tema;
 	private String letraInicial;
 	private boolean correto;
-
-	public Palavra(int tema, String letraInicial, String palavra, boolean correto) {
+	private int rodada;
+	
+	public Palavra(int tema, String letraInicial, String palavra, boolean correto, Jogador jogador, int rodada) {
 		this.tema = tema;
 		this.letraInicial = letraInicial;
 		this.palavra = palavra;
 		this.setCorreto(correto);
+		this.setJogador(jogador);
+		this.setRodada(rodada);
 	}
 
 	public String getPalavra() {
@@ -50,6 +54,22 @@ public class Palavra {
 	public String toString() {
 		return "Palavra [palavra=" + palavra + ", tema=" + tema + ", letraInicial=" + letraInicial + ", correto="
 				+ correto + "]";
+	}
+
+	public Jogador getJogador() {
+		return jogador;
+	}
+
+	public void setJogador(Jogador jogador) {
+		this.jogador = jogador;
+	}
+
+	public int getRodada() {
+		return rodada;
+	}
+
+	public void setRodada(int rodada) {
+		this.rodada = rodada;
 	}
 	
 	
